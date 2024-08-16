@@ -104,6 +104,8 @@ app.use(bodyParser.json());
 
 const allowedOrigins = [
     'https://video-i.vercel.app',
+    'https://geo-localisation.onrender.com/location',
+    'http://localhost:5000',
     'https://www.facebook.com',
     'https://www.messenger.com',
     'https://m.me',
@@ -123,7 +125,7 @@ app.use(cors({
 }));
 
 const mongoURI = "mongodb+srv://heshimajulienofficial:gZo66bAOKJBetFSQ@localisation.st4rgvh.mongodb.net/?retryWrites=true&w=majority&appName=localisation";
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('DB connected successfully'))
