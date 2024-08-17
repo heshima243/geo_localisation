@@ -103,6 +103,8 @@ const app = express();
 app.use(bodyParser.json());
 
 const allowedOrigins = [
+    'https://loveyplay.vercel.app',
+    'https://i-like.vercel.app',
     'https://video-i.vercel.app',
     'https://geo-localisation.onrender.com/location',
     'http://localhost:5000',
